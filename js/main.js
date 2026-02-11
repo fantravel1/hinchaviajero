@@ -128,7 +128,9 @@
               'barrios-matchday': 'matchday-neighborhoods',
               'cruzar-frontera': 'border-crossing',
               'indice-hincha': 'indice-hincha',
-              'la-previa': 'the-previa'
+              'la-previa': 'the-previa',
+              'primer-away-day': 'your-first-away-day',
+              'checklist-hincha': 'fan-checklist'
             };
             var filename = currentPath.split('/').pop().replace('.html', '');
             var enFilename = guideMap[filename] || filename;
@@ -137,6 +139,10 @@
             window.location.href = '/en/cities/index.html';
           } else if (currentPath.indexOf('/estadios/') !== -1) {
             window.location.href = '/en/stadiums/index.html';
+          } else if (currentPath.indexOf('/torneos/') !== -1) {
+            window.location.href = '/en/tournaments/index.html';
+          } else if (currentPath.indexOf('/contacto') !== -1) {
+            window.location.href = '/en/contact.html';
           } else if (currentPath.indexOf('/sobre-nosotros') !== -1) {
             window.location.href = '/en/about.html';
           } else {
@@ -159,7 +165,9 @@
               'matchday-neighborhoods': 'barrios-matchday',
               'border-crossing': 'cruzar-frontera',
               'indice-hincha': 'indice-hincha',
-              'the-previa': 'la-previa'
+              'the-previa': 'la-previa',
+              'your-first-away-day': 'primer-away-day',
+              'fan-checklist': 'checklist-hincha'
             };
             var enFilename2 = currentPath.split('/').pop().replace('.html', '');
             var esFilename = guideMapReverse[enFilename2] || enFilename2;
@@ -168,6 +176,10 @@
             window.location.href = '/ciudades/index.html';
           } else if (currentPath.indexOf('/en/stadiums/') !== -1) {
             window.location.href = '/estadios/index.html';
+          } else if (currentPath.indexOf('/en/tournaments/') !== -1) {
+            window.location.href = '/torneos/index.html';
+          } else if (currentPath.indexOf('/en/contact') !== -1) {
+            window.location.href = '/contacto.html';
           } else if (currentPath.indexOf('/en/about') !== -1) {
             window.location.href = '/sobre-nosotros.html';
           } else {
