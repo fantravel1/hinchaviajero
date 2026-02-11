@@ -133,6 +133,12 @@
             var filename = currentPath.split('/').pop().replace('.html', '');
             var enFilename = guideMap[filename] || filename;
             window.location.href = '/en/guides/' + enFilename + '.html';
+          } else if (currentPath.indexOf('/ciudades/') !== -1) {
+            window.location.href = '/en/cities/index.html';
+          } else if (currentPath.indexOf('/estadios/') !== -1) {
+            window.location.href = '/en/stadiums/index.html';
+          } else if (currentPath.indexOf('/sobre-nosotros') !== -1) {
+            window.location.href = '/en/about.html';
           } else {
             window.location.href = '/en' + currentPath;
           }
@@ -158,6 +164,12 @@
             var enFilename2 = currentPath.split('/').pop().replace('.html', '');
             var esFilename = guideMapReverse[enFilename2] || enFilename2;
             window.location.href = '/guias/' + esFilename + '.html';
+          } else if (currentPath.indexOf('/en/cities/') !== -1) {
+            window.location.href = '/ciudades/index.html';
+          } else if (currentPath.indexOf('/en/stadiums/') !== -1) {
+            window.location.href = '/estadios/index.html';
+          } else if (currentPath.indexOf('/en/about') !== -1) {
+            window.location.href = '/sobre-nosotros.html';
           } else {
             window.location.href = currentPath.replace('/en/', '/');
           }
