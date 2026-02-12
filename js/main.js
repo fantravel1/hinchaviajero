@@ -143,7 +143,13 @@
               'lima': 'lima',
               'santiago': 'santiago',
               'bogota': 'bogota',
-              'montevideo': 'montevideo'
+              'montevideo': 'montevideo',
+              'rio-de-janeiro': 'rio-de-janeiro',
+              'sao-paulo': 'sao-paulo',
+              'medellin': 'medellin',
+              'quito': 'quito',
+              'asuncion': 'asuncion',
+              'barranquilla': 'barranquilla'
             };
             var cityFile = currentPath.split('/').pop().replace('.html', '');
             if (cityFile === 'index') {
@@ -200,7 +206,13 @@
               'lima': 'lima',
               'santiago': 'santiago',
               'bogota': 'bogota',
-              'montevideo': 'montevideo'
+              'montevideo': 'montevideo',
+              'rio-de-janeiro': 'rio-de-janeiro',
+              'sao-paulo': 'sao-paulo',
+              'medellin': 'medellin',
+              'quito': 'quito',
+              'asuncion': 'asuncion',
+              'barranquilla': 'barranquilla'
             };
             var enCityFile = currentPath.split('/').pop().replace('.html', '');
             if (enCityFile === 'index') {
