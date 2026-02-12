@@ -159,11 +159,30 @@
               window.location.href = '/en/cities/' + enCity + '.html';
             }
           } else if (currentPath.indexOf('/estadios/') !== -1) {
-            window.location.href = '/en/stadiums/index.html';
+            var stadiumFile = currentPath.split('/').pop().replace('.html', '');
+            if (stadiumFile === 'index') {
+              window.location.href = '/en/stadiums/index.html';
+            } else {
+              window.location.href = '/en/stadiums/' + stadiumFile + '.html';
+            }
           } else if (currentPath.indexOf('/equipos/') !== -1) {
             window.location.href = '/en/teams/index.html';
           } else if (currentPath.indexOf('/torneos/') !== -1) {
-            window.location.href = '/en/tournaments/index.html';
+            var tournamentMap = {
+              'copa-libertadores': 'copa-libertadores',
+              'copa-sudamericana': 'copa-sudamericana',
+              'liga-argentina': 'argentine-league',
+              'brasileirao': 'brasileirao',
+              'liga-mx': 'liga-mx',
+              'liga-betplay': 'liga-betplay'
+            };
+            var tournamentFile = currentPath.split('/').pop().replace('.html', '');
+            if (tournamentFile === 'index') {
+              window.location.href = '/en/tournaments/index.html';
+            } else {
+              var enTournament = tournamentMap[tournamentFile] || tournamentFile;
+              window.location.href = '/en/tournaments/' + enTournament + '.html';
+            }
           } else if (currentPath.indexOf('/contacto') !== -1) {
             window.location.href = '/en/contact.html';
           } else if (currentPath.indexOf('/privacidad') !== -1) {
@@ -222,11 +241,30 @@
               window.location.href = '/ciudades/' + esCity + '.html';
             }
           } else if (currentPath.indexOf('/en/stadiums/') !== -1) {
-            window.location.href = '/estadios/index.html';
+            var enStadiumFile = currentPath.split('/').pop().replace('.html', '');
+            if (enStadiumFile === 'index') {
+              window.location.href = '/estadios/index.html';
+            } else {
+              window.location.href = '/estadios/' + enStadiumFile + '.html';
+            }
           } else if (currentPath.indexOf('/en/teams/') !== -1) {
             window.location.href = '/equipos/index.html';
           } else if (currentPath.indexOf('/en/tournaments/') !== -1) {
-            window.location.href = '/torneos/index.html';
+            var tournamentMapReverse = {
+              'copa-libertadores': 'copa-libertadores',
+              'copa-sudamericana': 'copa-sudamericana',
+              'argentine-league': 'liga-argentina',
+              'brasileirao': 'brasileirao',
+              'liga-mx': 'liga-mx',
+              'liga-betplay': 'liga-betplay'
+            };
+            var enTournamentFile = currentPath.split('/').pop().replace('.html', '');
+            if (enTournamentFile === 'index') {
+              window.location.href = '/torneos/index.html';
+            } else {
+              var esTournament = tournamentMapReverse[enTournamentFile] || enTournamentFile;
+              window.location.href = '/torneos/' + esTournament + '.html';
+            }
           } else if (currentPath.indexOf('/en/contact') !== -1) {
             window.location.href = '/contacto.html';
           } else if (currentPath.indexOf('/en/privacy') !== -1) {
