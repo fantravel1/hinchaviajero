@@ -141,7 +141,9 @@
               'buenos-aires': 'buenos-aires',
               'ciudad-de-mexico': 'mexico-city',
               'lima': 'lima',
-              'santiago': 'santiago'
+              'santiago': 'santiago',
+              'bogota': 'bogota',
+              'montevideo': 'montevideo'
             };
             var cityFile = currentPath.split('/').pop().replace('.html', '');
             if (cityFile === 'index') {
@@ -196,7 +198,9 @@
               'buenos-aires': 'buenos-aires',
               'mexico-city': 'ciudad-de-mexico',
               'lima': 'lima',
-              'santiago': 'santiago'
+              'santiago': 'santiago',
+              'bogota': 'bogota',
+              'montevideo': 'montevideo'
             };
             var enCityFile = currentPath.split('/').pop().replace('.html', '');
             if (enCityFile === 'index') {
