@@ -139,7 +139,9 @@
             // Map Spanish city paths to English
             var cityMap = {
               'buenos-aires': 'buenos-aires',
-              'ciudad-de-mexico': 'mexico-city'
+              'ciudad-de-mexico': 'mexico-city',
+              'lima': 'lima',
+              'santiago': 'santiago'
             };
             var cityFile = currentPath.split('/').pop().replace('.html', '');
             if (cityFile === 'index') {
@@ -192,7 +194,9 @@
           } else if (currentPath.indexOf('/en/cities/') !== -1) {
             var cityMapReverse = {
               'buenos-aires': 'buenos-aires',
-              'mexico-city': 'ciudad-de-mexico'
+              'mexico-city': 'ciudad-de-mexico',
+              'lima': 'lima',
+              'santiago': 'santiago'
             };
             var enCityFile = currentPath.split('/').pop().replace('.html', '');
             if (enCityFile === 'index') {
