@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Pagina no encontrada — HinchaViajero</title>
+  <meta name="description" content="La pagina que buscas no existe o fue expulsada del campo. Volvé al inicio y seguí explorando HinchaViajero.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://hinchaviajero.com/404.html">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://hinchaviajero.com/404.html">
+  <link rel="alternate" hreflang="en" href="https://hinchaviajero.com/en/404.html">
+  <link rel="alternate" hreflang="x-default" href="https://hinchaviajero.com/404.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .error-page {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-3xl) var(--space-lg);
+    }
+
+    .error-page__inner {
+      max-width: 640px;
+    }
+
+    .error-page__icon {
+      margin-bottom: var(--space-xl);
+    }
+
+    .error-page__icon svg {
+      width: 120px;
+      height: 120px;
+      opacity: 0.85;
+    }
+
+    .error-page__code {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(6rem, 15vw, 10rem);
+      font-weight: 700;
+      line-height: 1;
+      color: var(--color-accent);
+      margin-bottom: var(--space-sm);
+      letter-spacing: -0.03em;
+      text-shadow: 0 4px 24px rgba(230, 57, 70, 0.18);
+    }
+
+    .error-page__title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-md);
+    }
+
+    .error-page__subtitle {
+      font-size: var(--text-lg);
+      color: var(--color-text-light);
+      margin-bottom: var(--space-2xl);
+      line-height: 1.7;
+    }
+
+    .error-page__links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      justify-content: center;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .error-page__divider {
+      width: 60px;
+      height: 3px;
+      background: var(--color-secondary);
+      margin: 0 auto var(--space-xl);
+      border-radius: 2px;
+    }
+
+    .error-page__hint {
+      font-size: var(--text-sm);
+      color: var(--color-text-light);
+      font-style: italic;
+    }
+
+    @keyframes gentle-bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .error-page__icon svg {
+      animation: gentle-bounce 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="HinchaViajero — Inicio">
+        Hincha<span>Viajero</span><span class="logo-dot"></span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Navegacion principal">
+        <ul class="nav__list">
+          <li><a href="guias/away-days.html" class="nav__link">Guias</a></li>
+          <li><a href="ciudades/index.html" class="nav__link">Ciudades</a></li>
+          <li><a href="estadios/index.html" class="nav__link">Estadios</a></li>
+          <li><a href="guias/boletos-sin-estafa.html" class="nav__link">Boletos</a></li>
+          <li><a href="#indice-hincha" class="nav__link">Indice Hincha</a></li>
+          <li><a href="sobre-nosotros.html" class="nav__link">Nosotros</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a href="index.html#newsletter" class="btn btn--primary btn--small">Suscribirse</a>
+        </div>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: var(--space-md);">
+        <div class="lang-toggle">
+          <button class="lang-toggle__btn active" data-lang="es" aria-label="Espanol">ES</button>
+          <a href="en/404.html" class="lang-toggle__btn" aria-label="English">EN</a>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menu de navegacion" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ========== 404 ERROR CONTENT ========== -->
+    <section class="error-page" aria-label="Pagina no encontrada">
+      <div class="error-page__inner animate-on-scroll">
+
+        <!-- Soccer Ball SVG -->
+        <div class="error-page__icon" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="56" stroke="var(--color-primary)" stroke-width="3" fill="none"/>
+            <polygon points="60,20 72,38 88,38 92,56 80,68 88,86 76,96 60,88 44,96 32,86 40,68 28,56 32,38 48,38" fill="none" stroke="var(--color-primary)" stroke-width="2.5" stroke-linejoin="round"/>
+            <polygon points="60,20 48,38 72,38" fill="var(--color-primary)" opacity="0.15"/>
+            <polygon points="88,38 92,56 80,68" fill="var(--color-primary)" opacity="0.15"/>
+            <polygon points="88,86 76,96 60,88" fill="var(--color-primary)" opacity="0.15"/>
+            <polygon points="44,96 32,86 40,68" fill="var(--color-primary)" opacity="0.15"/>
+            <polygon points="32,38 28,56 40,68" fill="var(--color-primary)" opacity="0.15"/>
+            <!-- Red card overlay -->
+            <rect x="74" y="6" width="28" height="40" rx="3" fill="var(--color-accent)" opacity="0.9" transform="rotate(15, 88, 26)"/>
+          </svg>
+        </div>
+
+        <div class="error-page__code">404</div>
+
+        <h1 class="error-page__title">Tarjeta roja para esta pagina</h1>
+
+        <p class="error-page__subtitle">
+          La pagina que buscas no existe o fue expulsada del campo.<br>
+          Puede que la URL haya cambiado, que el enlace este roto o que el arbitro haya decidido otra cosa.
+        </p>
+
+        <div class="error-page__divider"></div>
+
+        <div class="error-page__links">
+          <a href="index.html" class="btn btn--primary">Volver al Inicio</a>
+          <a href="guias/away-days.html" class="btn btn--secondary">Explorar Guias</a>
+          <a href="ciudades/index.html" class="btn btn--ghost">Ver Ciudades</a>
+        </div>
+
+        <p class="error-page__hint">
+          Si crees que esto es un error, escribinos a <a href="contacto.html" style="color: var(--color-primary); text-decoration: underline;">contacto</a> y lo revisamos.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__logo">Hincha<span>Viajero</span></div>
+          <p class="footer__desc">La primera plataforma de viajes para hinchas de futbol en Latinoamerica. Guias reales, logistica de calle y el Indice Hincha para que cada away-day valga la pena.</p>
+        </div>
+
+        <!-- Guias -->
+        <div>
+          <h4 class="footer__heading">Guias</h4>
+          <ul class="footer__links">
+            <li><a href="guias/away-days.html">Away-Days</a></li>
+            <li><a href="guias/boletos-sin-estafa.html">Boletos</a></li>
+            <li><a href="guias/seguridad-matchday.html">Seguridad</a></li>
+            <li><a href="guias/costos-away-day.html">Costos</a></li>
+            <li><a href="guias/la-previa.html">Previa</a></li>
+            <li><a href="guias/primer-away-day.html">Primer Away-Day</a></li>
+            <li><a href="guias/checklist-hincha.html">Checklist</a></li>
+          </ul>
+        </div>
+
+        <!-- Explorar -->
+        <div>
+          <h4 class="footer__heading">Explorar</h4>
+          <ul class="footer__links">
+            <li><a href="ciudades/index.html">Ciudades</a></li>
+            <li><a href="estadios/index.html">Estadios</a></li>
+            <li><a href="torneos/index.html">Torneos</a></li>
+            <li><a href="guias/indice-hincha.html">Indice Hincha</a></li>
+            <li><a href="guias/clasicos-sudamerica.html">Clasicos</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h4 class="footer__heading">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="terminos.html">Terminos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 HinchaViajero. Todos los derechos reservados. Hecho con pasion desde Latinoamerica.</p>
+        <div class="lang-toggle">
+          <button class="lang-toggle__btn active" data-lang="es" aria-label="Espanol">ES</button>
+          <a href="en/404.html" class="lang-toggle__btn" aria-label="English">EN</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

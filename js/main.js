@@ -136,13 +136,34 @@
             var enFilename = guideMap[filename] || filename;
             window.location.href = '/en/guides/' + enFilename + '.html';
           } else if (currentPath.indexOf('/ciudades/') !== -1) {
-            window.location.href = '/en/cities/index.html';
+            // Map Spanish city paths to English
+            var cityMap = {
+              'buenos-aires': 'buenos-aires',
+              'ciudad-de-mexico': 'mexico-city',
+              'lima': 'lima',
+              'santiago': 'santiago',
+              'bogota': 'bogota',
+              'montevideo': 'montevideo'
+            };
+            var cityFile = currentPath.split('/').pop().replace('.html', '');
+            if (cityFile === 'index') {
+              window.location.href = '/en/cities/index.html';
+            } else {
+              var enCity = cityMap[cityFile] || cityFile;
+              window.location.href = '/en/cities/' + enCity + '.html';
+            }
           } else if (currentPath.indexOf('/estadios/') !== -1) {
             window.location.href = '/en/stadiums/index.html';
+          } else if (currentPath.indexOf('/equipos/') !== -1) {
+            window.location.href = '/en/teams/index.html';
           } else if (currentPath.indexOf('/torneos/') !== -1) {
             window.location.href = '/en/tournaments/index.html';
           } else if (currentPath.indexOf('/contacto') !== -1) {
             window.location.href = '/en/contact.html';
+          } else if (currentPath.indexOf('/privacidad') !== -1) {
+            window.location.href = '/en/privacy.html';
+          } else if (currentPath.indexOf('/terminos') !== -1) {
+            window.location.href = '/en/terms.html';
           } else if (currentPath.indexOf('/sobre-nosotros') !== -1) {
             window.location.href = '/en/about.html';
           } else {
@@ -173,13 +194,33 @@
             var esFilename = guideMapReverse[enFilename2] || enFilename2;
             window.location.href = '/guias/' + esFilename + '.html';
           } else if (currentPath.indexOf('/en/cities/') !== -1) {
-            window.location.href = '/ciudades/index.html';
+            var cityMapReverse = {
+              'buenos-aires': 'buenos-aires',
+              'mexico-city': 'ciudad-de-mexico',
+              'lima': 'lima',
+              'santiago': 'santiago',
+              'bogota': 'bogota',
+              'montevideo': 'montevideo'
+            };
+            var enCityFile = currentPath.split('/').pop().replace('.html', '');
+            if (enCityFile === 'index') {
+              window.location.href = '/ciudades/index.html';
+            } else {
+              var esCity = cityMapReverse[enCityFile] || enCityFile;
+              window.location.href = '/ciudades/' + esCity + '.html';
+            }
           } else if (currentPath.indexOf('/en/stadiums/') !== -1) {
             window.location.href = '/estadios/index.html';
+          } else if (currentPath.indexOf('/en/teams/') !== -1) {
+            window.location.href = '/equipos/index.html';
           } else if (currentPath.indexOf('/en/tournaments/') !== -1) {
             window.location.href = '/torneos/index.html';
           } else if (currentPath.indexOf('/en/contact') !== -1) {
             window.location.href = '/contacto.html';
+          } else if (currentPath.indexOf('/en/privacy') !== -1) {
+            window.location.href = '/privacidad.html';
+          } else if (currentPath.indexOf('/en/terms') !== -1) {
+            window.location.href = '/terminos.html';
           } else if (currentPath.indexOf('/en/about') !== -1) {
             window.location.href = '/sobre-nosotros.html';
           } else {
